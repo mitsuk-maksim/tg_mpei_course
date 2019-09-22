@@ -1,3 +1,4 @@
+# https://leetcode.com/problems/hamming-distance/
 class Solution:
     def hammingDistance(self, x: int, y: int) -> int:
         mas_bin_x = [0]*32
