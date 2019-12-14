@@ -6,7 +6,7 @@ class Solution:
         stones = [-1*i for i in stones]
         while len(stones) > 1:
             heapq.heapify(stones) # список в кучу
-            s1 = heapq.heappop(stones) # берем последний элемент
+            s1 = heapq.heappop(stones) # берем элемент c наивысшим весом (со знаком минус)
             s2 = heapq.heappop(stones)
             delta = s1 - s2
             if delta != 0:
